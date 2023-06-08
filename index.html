@@ -12,20 +12,26 @@
     <body>
 
         <main>
-            <section>
-                
-                <h1>Calculadora de IMC - Índice de Massa Corporal</p>
-                <form class="calculadora">
-                    <label for="altura">Altura (m)</label>
-                    <input type="text" id="altura" class="input" required placeholder="1,65 m">
+            <section class="principal">     
 
-                    <label for="peso">Peso (kg)</label>
-                    <input type="text" id="peso" class="input" required placeholder="81,50 kg">
+                <h1 class="titulo">Calculadora - IMC<br>Índice de Massa Corporal</h1>
 
-                    <input type="submit" value="Calcular" class="enviar">
-                </form>
+                <div class="container">
+                    <form class="calculadora">
+                        <label for="altura">Altura (m)</label>
+                        <input type="text" id="altura" class="input" required placeholder="1,65 m">
 
+                        <label for="peso">Peso (kg)</label>
+                        <input type="text" id="peso" class="input" required placeholder="81,50 kg">
+
+                        <input type="submit" value="Calcular" class="enviar">                   
+                    </form>
+
+                    <div class="resultado" id="resultdado"></div>
+                </div>
             </section>
         </main>
+
+        <script src="script.js"></script>
     </body>
 </html>
