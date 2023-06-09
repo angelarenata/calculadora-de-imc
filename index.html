@@ -6,7 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora de IMC</title>
 
+        
+        <style>@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');</style> 
+            
         <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body>
@@ -14,22 +18,53 @@
         <main>
             <section class="principal">     
 
-                <h1 class="titulo">Calculadora - IMC<br>Índice de Massa Corporal</h1>
+                <h1 class="titulo">Calculadora de IMC - Índice de Massa Corporal</h1>
 
                 <div class="container">
+                    <img src="images/img-calculadora.png" alt="calculadora" class="img-calculadora">
+
                     <form class="calculadora">
-                        <label for="altura">Altura (m)</label>
-                        <input type="text" id="altura" class="input" required placeholder="1,65 m">
 
-                        <label for="peso">Peso (kg)</label>
-                        <input type="text" id="peso" class="input" required placeholder="81,50 kg">
+                        <div class="input-box">
+                            <label for="altura">Altura em Metros</label>
+                            <div class="input-line">
+                                <img src="images/icone-fita.png" alt="fita métrica" class="icones">                    
+                                <input type="text" id="altura" class="input" required placeholder="1,65">
+                                <span>m</span>
+                            </div>
+                        </div>
 
-                        <input type="submit" value="Calcular" class="enviar">                   
+                        <div class="input-box">
+                            <label for="peso">Peso em Quilogramas</label>
+                            <div class="input-line">  
+                                <img src="images/icone-balanca.png" alt="balança" class="icones">                              
+                                <input type="text" id="peso" class="input" required placeholder="81,50">
+                                <span>kg</span>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Calcular" class="calcular">                         
+                        
+                        <div id="caixa-resultado" class="caixa-resultado" >
+                            <div class="resultado">
+                                <div id="imc">
+                                    <p>Valor do seu IMC:</p>
+                                    <p id="valor" class="valor">15.5</p>                                
+                                </div>
+
+                                <div id="descrição" class="descrição">
+                                    <span>Nota: voce está gordo</span>
+                                </div>
+                            </div>
+                        </div> 
+
                     </form>
-
-                    <div class="resultado" id="resultdado"></div>
                 </div>
+
             </section>
+
+        </div>
+        
         </main>
 
         <script src="script.js"></script>

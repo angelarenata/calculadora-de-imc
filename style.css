@@ -9,41 +9,116 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: black;
+    background-color: #1C1C1C;
 
 }
 
 .titulo {
-    background-color: #262626;
+    background-color: black;
     padding: 30px;
     text-align: center;
     color: white;
     font-size: 30px;
     margin: 0 auto;
-    max-width: 700px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    max-width: 700px;
-    margin: 0 auto;
-    border-radius: 20px;
-    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.img-calculadora {
+    height: 300px;
+
 }
 
 .calculadora {
-    width: 50%;
-    background-color: #262626;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    padding: 30px;
+    gap: 30px;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    height: 500px;
+    width: 400px; 
+    box-shadow: 2px 2px 2px silver;
+}
+
+.icones {
+    width: 40px;
+}
+
+.input-box label {
+    font-size: 16px;
+    color:white;
+}
+
+.input-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #262626;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin-top: 4px;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    padding: 5px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.calcular {
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .resultado {
-    background-color: #181818;
-    width: 50%;
-    padding: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    padding: 10px;
+}
+
+.caixa-resultado {
+    display: none;
+}
+
+.valor {
+    font-size: 40px;
+}
+
+.descrição {
+   
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
 }
