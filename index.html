@@ -23,7 +23,7 @@
                 <div class="container">
                     <img src="images/img-calculadora.png" alt="calculadora" class="img-calculadora">
 
-                    <form class="calculadora">
+                    <form class="calculadora" id="calculadora">
 
                         <div class="input-box">
                             <label for="altura">Altura em Metros</label>
@@ -45,21 +45,22 @@
 
                         <input type="submit" value="Calcular" class="calcular">                         
                         
-                        <div id="caixa-resultado" class="caixa-resultado" >
-                            <div class="resultado">
-                                <div id="imc">
-                                    <p>Valor do seu IMC:</p>
-                                    <p id="valor" class="valor">15.5</p>                                
-                                </div>
-
-                                <div id="descrição" class="descrição">
-                                    <span>Nota: voce está gordo</span>
-                                </div>
-                            </div>
-                        </div> 
-
-                    </form>
+                    </form>                    
                 </div>
+
+                <div id="caixa-resultado" class="caixa-resultado" >
+                    <div class="resultado">
+                        <div id="imc">
+                            <p>Valor do seu IMC:</p>
+                            <p id="valor" class="valor"></p>                                
+                        </div>
+
+                        <div id="descricao" class="descricao">
+                            <span></span>
+                        </div>
+                    </div>
+                </div> 
+
 
             </section>
 
@@ -67,6 +68,6 @@
         
         </main>
 
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
