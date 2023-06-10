@@ -11,13 +11,22 @@ form.addEventListener('submit', function(event) {
     const valor = document.getElementById('valor');
     let descricao = '';
 
-    document.getElementById('descricao').classList.remove('caixa-resultado');
+    document.getElementById('caixa-resultado').classList.remove('caixa-resultado');
 
     if (imc < 18.5 ) {
-        descricao = "Atenção! Seu peso está abaixo do normal."
+        descricao = "Atenção! Seu peso está abaixo do normal.";
     } else if ( imc >= 18.5 && imc <= 25 ) {
-        descricao = "Seu peso está ideal!"
+        descricao = "Seu peso está ideal!";
+    } else if (imc > 25 && imc <= 30) {
+        descricao = "Atenção! Você está com sobrepeso.";
+    } else if (imc > 30 && imc <=40) {
+        descricao = "Atenção! Você está com obessidade moderada";
+    } else {
+        descricao = "Muita Atenção! Você está com obesidade mórbida!";
     }
+
+    valor.textContent= imc.replace('.', ',');
+    document.getElementById('descricao').textContent = descricao;
 
 
 });

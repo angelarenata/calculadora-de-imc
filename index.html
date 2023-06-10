@@ -24,12 +24,12 @@
                     <img src="images/img-calculadora.png" alt="calculadora" class="img-calculadora">
 
                     <form class="calculadora" id="calculadora">
-
                         <div class="input-box">
                             <label for="altura">Altura em Metros</label>
                             <div class="input-line">
                                 <img src="images/icone-fita.png" alt="fita métrica" class="icones">                    
-                                <input type="text" id="altura" class="input" required placeholder="1,65">
+                                <input type="number" id="altura" class="input" required placeholder="1.65" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any"
+                                name="null">
                                 <span>m</span>
                             </div>
                         </div>
@@ -38,34 +38,31 @@
                             <label for="peso">Peso em Quilogramas</label>
                             <div class="input-line">  
                                 <img src="images/icone-balanca.png" alt="balança" class="icones">                              
-                                <input type="text" id="peso" class="input" required placeholder="81,50">
+                                <input type="number" id="peso" class="input" required placeholder="81.50" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any"
+                                name="null">
                                 <span>kg</span>
                             </div>
                         </div>
 
-                        <input type="submit" value="Calcular" class="calcular">                         
+                        <button class="calcular" id="calcular">Calcular</button>   
                         
-                    </form>                    
-                </div>
-
-                <div id="caixa-resultado" class="caixa-resultado" >
-                    <div class="resultado">
-                        <div id="imc">
-                            <p>Valor do seu IMC:</p>
-                            <p id="valor" class="valor"></p>                                
-                        </div>
-
-                        <div id="descricao" class="descricao">
-                            <span></span>
-                        </div>
-                    </div>
-                </div> 
-
-
-            </section>
-
-        </div>
+                        <div id="caixa-resultado" class="caixa-resultado">
+                            <div class="resultado">
+                                <div id="imc">
+                                    <p>Valor do seu IMC é</p>
+                                    <p id="valor" class="valor"></p>                                
+                                </div>
         
+                                <div id="descricao" class="descricao">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>    
+                    </form>    
+                    
+                </div> 
+            </section>
+     
         </main>
 
         <script src="js/script.js"></script>
