@@ -47,7 +47,7 @@ body {
     border-radius: 20px;
     height: 500px;
     width: 400px; 
-    box-shadow: 2px 2px 2px silver;
+    border: 1px solid silver;
 }
 
 .icones {
@@ -80,6 +80,12 @@ body {
     padding: 5px;
 }
 
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+    appearance: none;
+
+}
+
 .input:focus {
     outline: none;
 }
@@ -93,6 +99,13 @@ body {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.calcular:hover {
+    background-color: gold;
+    color: white;
+
 }
 
 .resultado {
@@ -120,4 +133,14 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 5px;
+}
+
+/*javaScript*/
+
+.atencao {
+    color: red;
+}
+
+.normal {
+    color: green;
 }
