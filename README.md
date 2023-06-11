@@ -20,3 +20,8 @@ Criação de uma calculadora de IMC para iniciar aplicações de JavaScript nos 
 - HTML  
 - CSS  
 - JavaScript
+
+## **Página com um exemplo de resultado**
+
+![2023-06-11](https://github.com/angelarenata/calculadora-de-imc/assets/133550514/c1478297-7cd4-435f-bdf7-37444af137b4)
+
